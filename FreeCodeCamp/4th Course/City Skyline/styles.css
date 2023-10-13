@@ -48,10 +48,10 @@ body {
         #ffcf33 20%,
         #ffff66 21%,
         #bbeeff 100%
-    );
+      );
 }
   
-/* BACKGROUND BUILDINGS - "bb" stands for "background building" */
+  /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1 {
     width: 10%;
     height: 70%;
@@ -75,15 +75,15 @@ body {
     background: linear-gradient(
         var(--building-color1) 50%,
         var(--window-color1)
-    );
-}
+      );
+ }
   
 .bb1-window {
     height: 10%;
     background: linear-gradient(
         var(--building-color1),
         var(--window-color1)
-    );
+      );
 }
   
 .bb2 {
@@ -116,7 +116,7 @@ body {
         var(--building-color3),
         var(--building-color3),
         var(--window-color3) 15%
-    );
+      );
 }
   
 .bb4 {
@@ -148,7 +148,7 @@ body {
     background-color: var(--window-color4);
 }
   
-/* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
+  /* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
 .fb1 {
     width: 10%;
     height: 60%;
@@ -175,13 +175,13 @@ body {
         var(--building-color4) 10%,
         transparent 10%,
         transparent 15%
-    ),
+      ),
       repeating-linear-gradient(
         var(--building-color4),
         var(--building-color4) 10%,
         var(--window-color4) 10%,
         var(--window-color4) 90%
-    );
+      );
 }
   
 .fb2 {
@@ -229,7 +229,7 @@ body {
     width: 25%;
     height: 80%;
     background-color: var(--window-color1);
- }
+}
   
 .fb4 {
     width: 8%;
@@ -296,26 +296,26 @@ body {
         var(--window-color3) 30%
       );
 }
-  
+
 @media (max-width: 1000px) {
     :root {
-        --building-color1: #000;
-        --building-color2: #000;
-        --building-color3: #000;
-        --building-color4: #000;
+      --building-color1: #000;
+      --building-color2: #000;
+      --building-color3: #000;
+      --building-color4: #000;
         --window-color1: #777;
-        --window-color2: #777;
-        --window-color3: #777;
-        --window-color4: #777;
-    }
-    
-    .sky {
-        background: radial-gradient(
-            closest-corner circle at 15% 15%,
-            #ccc,
-            #ccc 20%,
-            #445 21%,
-            #223 100%
+    --window-color2: #777;
+    --window-color3: #777;
+    --window-color4: #777;
+}
+
+.sky {
+      background: radial-gradient(
+          closest-corner circle at 15% 15%,
+          #ccc,
+          #ccc 20%,
+          #445 21%,
+          #223 100%
         );
     }
-}  
+}    
