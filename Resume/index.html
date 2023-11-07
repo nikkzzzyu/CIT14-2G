@@ -1,112 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
-    <title>Resume</title>
-  </head>
-  <body>
-    <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="title text-center">
-              <h1>Jeanikka Merjoy Lumague</h1>
-              <h3>Fullstack Developer</h3>
-              <hr />
-            
-            <!-- summary section -->
-            <div class="summary">
-              <h2 class="text-center">Summary</h2>
-              <p>As a dedicated student pursuing a Bachelor of Science in Information Technology 
-                with a focus on Web Technology at the University of Cordilleras, I am passionate 
-                about acquiring a strong foundation in web development, programming, and IT 
-                fundamentals. I am eager to apply my knowledge and skills to real-world projects 
-                and am committed to continuous learning and growth in the field of web technology.</p>
-              
-            <!-- Skills title -->
-              <h2 class="skills-title">SKILLS</h2>
-
-              <div class="skills">
-                <div class="col-md-3 col-sm-3">
-                  <p>Animation</p>
-                  <p>Coding</p>
-                  <p>Creativity</p>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Resume</title>
+        <link rel="stylesheet" href="sass/style.css">
+        <script src="javascript.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    </head>
+    <body>
+        <div class="resume">
+            <div class="base">
+                <div class="profile">
+                    <div class="photo">
+                        <img src="profile.jpg">
+                    </div>
+                    <div class="info">
+                        <h4 class="name">Jeanikka Merjoy Lumague</h4>
+                        <small class="job">Front-end Web Designer</small>
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-3">
-                  <p>Python</p>
-                  <p>Design</p>
-                  <p>Research</p>
+                <div class="about">
+                    <h3>About me</h3>
+                    Hello! I'm a student from University of Cordilleras.
+                    <br>
+                    Taking a course of Bachelor of Information Technology (BSIT).
                 </div>
-                <div class="col-md-3 col-sm-3">
-                  <p>HTML</p>
-                  <p>CSS</p>
-                  <p>JavaScript</p>
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <div class="call">
+                        <i class="fa fa-phone"></i>
+                        <span>+63 915 004 9587</span>
+                    </div>
+                    <div class="address">
+                        <i class="fa fa-map-marker"></i>
+                        <span>Benguet, Baguio City</span>
+                    </div>
+                    <div class="email">
+                        <i class="fa fa-envelope"></i>
+                        <span>nikka@gmail.com</span>
+                    </div>
+                    <div class="website">
+                        <a href="https://github.com/nikkzzzyu" target="_blank">
+                            <i class="fa fa-home"></i>
+                            <span>Github</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-3">
-                  <p>Adaptability</p>
-                  <p>Teamwork</p>
-                  <p>Communication</p>
+                <div class="follow">
+                    <h3>Follow</h3>
+                    <div class="box">
+                        <a href="https://www.facebook.com/jiinxxxXx/" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jaekaa.a/" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.pinterest.ph/nikk_yu/" target="_blank">
+                            <i class="fa fa-pinterest-p"></i>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="fa fa-tumblr"></i>
+                        </a>
+                        <a href="" target="_blank">
+                            <i class="fa fa-telegram"></i>
+                        </a>
+                    </div> 
                 </div>
-              </div>
             </div>
-
-            <!-- work experience section -->
-            <div class="work-experience">
-              <h2 class="text-center">Work Experience</h2>
-              <div class="row experience-title">
-                <div class="col-md-9">
-                  <h3>Some company</h3>
-                  <h4>Program Manager</h4>
-                  <h5>Some project</h5>
-                </div>
-                <div class="col-md-3">
-                  <h3>(Month, Year) - (Present)</h3>
-                </div>
-              </div>
-              <div class="row experience-summary">
-                <div class="col-md-12">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fugiat ullam, pariatur, iste sunt ducimus modi cum ad provident dolores mollitia voluptatibus nemo amet ipsam corporis, accusamus repudiandae nihil! Sed?</p>
-                </div>
-              </div>
-              
-              <!-- Corasent -->
-              <div class="row experience-title">
-                <div class="col-md-9">
-                  <h3>Lorem ipsum dolor sit amet</h3>
-                  <h4>consectetur adipisicing elit.</h4>
-                  <h5>Et fugiat ullam, pariatur,</h5>
-                </div>
-                <div class="col-md-3">
-                  <h3>(Month, Year) - (Present)</h3>
-                </div>
-              </div>
-              <div class="row experience-summary">
-                <div class="col-md-12">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sequi voluptatibus similique repellat, qui officiis excepturi odit esse magni veritatis voluptatum iste molestias illum labore fugit nihil, modi inventore. Excepturi!:</p>
-                  <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                  </ul>
-                </div>
-              </div>
+        </div>
+        <div class="func">
+            <div class="edu">
+                <h3>
+                    <i class="fa fa-graduation-cap"></i>
+                    Education
+                </h3>
+                <ul>
+                    <li>
+                        <span>University of Cordilleras</span>
+                        <small>College</small>
+                        <small>Set Aug 2022 - Present</small>
+                    </li>
+                    <li>
+                        <span>BRITS Academy</span>
+                        <small>Senior High School</small>
+                        <small>Set 2020 - May 2022</small>
+                    </li>
+                </ul>
             </div>
-          </div>
+            <div class="work">
+                <h3>
+                    <i class="fa fa-certificate"></i>
+                    Training and Seminars
+                </h3>
+                <ul>
+                    <li>
+                        <span>FreeCodeCamp</span>
+                        <small>October 28, 2023</small>
+                    </li>
+                    <li>
+                        <span>QBO x Cities Seminar</span>
+                        <small>September 15, 2023</small>
+                    </li>
+                    <li>
+                        <span>Institute of Global Professionals</span>
+                        <small>Gender Fair Language</small>
+                        <small>October 8, 2022</small>
+                    </li>
+                </ul>
+            </div>
+            <div class="skills-prog">
+                <h3>
+                    <i class="fa fa-code"></i>
+                    Programming Skills
+                </h3>
+                <ul>
+                    <li data-percent="92">
+                        <span>HTML</span>
+                        <div class="skills-bar">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                    <li data-percent="96">
+                        <span>CSS & SASS</span>
+                        <div class="skills-bar">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                    <li data-percent="40">
+                        <span>JavaScript</span>
+                        <div class="skills-bar">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                    <li data-percent="50">
+                        <span>Python</span>
+                        <div class="skills-bar">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                    <li data-percent="33">
+                        <span>Java</span>
+                        <div class="skills-bar">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                    <li data-percent="52">
+                        <span>SQL</span>
+                        <div class="skills-bar">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                    <li data-percent="20">
+                        <span>PHP</span>
+                        <div class="skills-bar">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skills-soft">
+                <h3>
+                    <i class="fa fa-th-list"></i>
+                    Software Skills
+                </h3>
+                <ul>
+                    <li data-percent="94">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45"></circle>
+                        </svg>
+                        <span>Photoshop</span>
+                        <small></small>
+                    </li>
+                    <li data-percent="80">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45"></circle>
+                        </svg>
+                        <span>Graphic Design</span>
+                        <small></small>
+                    </li>
+                    <li data-percent="89">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45"></circle>
+                        </svg>
+                        <span>Blender</span>
+                        <small></small>
+                    </li>
+                    <li data-percent="55">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45"></circle>
+                        </svg>
+                        <span>Procreate</span>
+                        <small></small>
+                    </li>
+                </ul>
+            </div>
+            <div class="interests">
+                <h3>
+                    <i class="fa fa-star"></i>
+                    Interests
+                </h3>
+                <div class="interests-items">
+                    <div class="draw">
+                        <i class="fa fa-paint-brush"></i>
+                        <span>Draw</span>
+                    </div>
+                    <div class="movie">
+                        <i class="fa fa-film"></i>
+                        <span>Movie</span>
+                    </div>
+                    <div class="music">
+                        <i class="fa fa-headphones"></i>
+                        <span>Music</span>
+                    </div>
+                    <div class="game">
+                        <i class="fa fa-gamepad"></i>
+                        <span>Game</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      
-      <div class="contact-info">
-        <div class="underline"></div> 
-        <div class="social-icons">
-          <a href="#" class="facebook-icon"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="instagram-icon"><i class="fab fa-instagram"></i></a>
-        </div>
-        <div class="contact-details">
-          <div class="contact-number">123-456-7890</div>
-          <div class="contact-email">nikzzzlumaguemerjoy@gmail.com</div>
-        </div>
-      </div>
-
-  </body>
+    </body>
 </html>
+
