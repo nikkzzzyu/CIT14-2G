@@ -111,7 +111,7 @@ h3 {
 .resume .contact div a:hover span::after {
   width: 100%;
 }
-.resume .contact div:hover i {
+.resume .contact div :hover i {
   color: #5fa6e0;
 }
 .resume .contact div i {
@@ -120,18 +120,18 @@ h3 {
   height: 20px;
   font-size: 20px;
   text-align: center;
-  margin-right: 10px;
+  margin-right: 15px;
   transition-duration: 0.3s;
 }
 .resume .contact div i span {
   position: relative;
 }
-.resume .contact div i span::after {
+.resume .contact div i span ::after {
   content: "";
   position: absolute;
   background: #5fa6e0;
+  width: 100%;
   height: 1px;
-  width: 0;
   bottom: 0;
   left: 0;
   transition-duration: 0.3s;
@@ -337,6 +337,7 @@ h3 {
 .func .skills-soft ul li:hover svg {
   width: 95%;
   fill: transparent;
+  transform: rotate(-90deg);
 }
 .func .skills-soft ul li:hover svg circle {
   stroke-width: 1px;
@@ -352,6 +353,7 @@ h3 {
   display: block;
   width: 100%;
   top: 52%;
+  transition-duration: 0.3s;
 }
 .func .skills-soft ul li:hover .soft-info span {
   top: 40%;
@@ -366,6 +368,7 @@ h3 {
   justify-content: space-between;
 }
 .func .interests-items div {
+  display: inline-block;
   width: 80px;
   height: 80px;
 }
@@ -386,5 +389,14 @@ h3 {
 }
 .func .interests-items div:hover i span {
   display: block;
+}
+
+@keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px #3d405b;
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(61, 64, 91, 0);
+  }
 }
 /*# sourceMappingURL=style.css.map */
