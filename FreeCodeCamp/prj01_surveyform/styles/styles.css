@@ -31,7 +31,7 @@ body::before {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background: url('/FreeCodeCamp/prj01_surveyform/Preview/background-image.jpg');
+  background: url('/FreeCodeCamp/prj01_surveyform/img/background-image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
