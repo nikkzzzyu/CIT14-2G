@@ -1,0 +1,191 @@
+/* Mobile */
+@media screen and (max-width: 767px) {
+    body {
+        right: 100px;
+        margin-left: 10px;
+        background: #fbfbfb;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .title,
+    footer,
+    footer .heart::before {
+        text-align: center;
+    }
+
+    .custom-line {
+        border: 0.5px solid #a0a0a0;
+        margin: 50px 0;
+        border-style: dashed;
+        border-width: 2px;
+    }
+
+
+    .box,
+    .container,
+    .float-box,
+    .flex-box,
+    .complex,
+    .card,
+    .parent-box {
+        width: 100%; /* Adjust the width as needed */
+        margin: 5px auto; /* Center horizontally */
+        padding: 10px;
+    }
+
+    /* Exercise 2 */
+
+    .container {
+        font-size: 17px;
+    }
+
+    .container-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Exercise 6 */
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #9D8F8F;
+    }
+
+    .grid-item {
+        height: 1fr;
+        background-color: #FFC7C7;
+        color: #000000;
+        padding: 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Exercise 7 */
+
+    * {
+    padding: 0;
+    margin: 0;
+    }
+
+    .complex {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Equal-width columns */
+        grid-template-rows: repeat(6, 1fr); /* Equal-height rows */
+        box-sizing: border-box;
+        background-color: #FAF3F0;
+    }
+
+    .complex > div {
+        margin: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item1 {
+        background-color: #FD8A8A;
+        font-size: 16px; /* Adjusted font size */
+        grid-column: 1/4;
+        grid-row: 1/7;
+    }
+
+    .item2 {
+        background-color: #F1F7B5;
+        font-size: 16px;
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    .item3 {
+        background-color: #A2CDCD;
+        font-size: 16px;
+        grid-column: 2/3;
+        grid-row: 2/6;
+    }
+
+    .item4 {
+        background-color: #949CDF;
+        font-size: 16px;
+        grid-column: 3/4;
+        grid-row: 2/6;
+    }
+
+    .item5 {
+        background-color: #B0D9B1;
+        font-size: 16px;
+        grid-column: 1/2;
+        grid-row: 4/6;
+    }
+
+    .item6 {
+        background-color: #FFCF96;
+        font-size: 16px;
+        grid-column: 1/4;
+        grid-row: 6/7;
+    }
+
+    /* Exercise 9 */
+
+    body > div > .parent-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        margin: 0;
+    }
+
+    .parent-box {
+        background-color: #EDE4E0;
+        padding: 30px;
+        margin: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        border-radius: 10px;
+        width: 200px;
+        height: 390px;
+    }
+
+    .child-box {
+        background-color: #FEFCF3;
+        padding: 15px;
+        margin: 15px;
+        width: 170px;
+        height: 150px;
+    }
+
+    .grandchild-box {
+        background-color: #e7ddcc;
+        padding: 10px;
+        margin: 10px;
+        width: 150px;
+        height: 100px;
+    }
+
+    /* Footer */
+
+    footer {
+        background: #fbfbfb;
+        line-height: 1.5;
+        padding: 15px;
+    }
+
+    footer > p {
+        font-size: 16px;
+    }
+
+    footer .heart::before {
+        font-size: 1.5rem;
+    }
+}

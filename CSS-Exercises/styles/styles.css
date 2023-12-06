@@ -1,3 +1,5 @@
+@import url('styles2.css'); /* Exercise 4 */
+
 body {
     margin: 0 auto;
     position: absolute;
@@ -56,14 +58,21 @@ body::after {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.custom-line {
+    border: 0.5px solid #a0a0a0;
+    margin: 50px 0;
+    border-style: dashed;
+    border-width: 2px;
+}
+
 /* Exercise 1: Basic Box Model */
 
 .box {
     width: 200px;
     height: 150px;
-    padding: 20px;
+    padding: 40px;
     border: 1px solid black;
-    margin: 10px;
+    margin: 30px;
     display: inline-block;
     text-align: center;
     font-size: 20px;
@@ -108,8 +117,8 @@ body::after {
 .float-box {
     width: 100px;
     height: 100px;
-    margin-right: 40px;
-    padding: 20px;
+    margin: 25px;
+    padding: 30px;
     float: left;
     background-color: #AEC3AE;
 }
@@ -121,80 +130,6 @@ body::after {
 }
 
 /* Exercise 4: Responsive Design with Media Queries */
-/* For Desktop and Tablet View */
-@media screen and (min-width: 2000px) {
-    body {
-        margin: 0 auto;
-        background: #fbfbfb;
-        padding: 15px;
-        text-align: center;
-    }
-
-    .title,
-    footer,
-    footer .heart::before {
-        text-align: left;
-    }
-
-    .container-center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .box,
-    .container,
-    .float-box,
-    .flex-box,
-    .grid-item,
-    .card,
-    .parent-box {
-        width: 50%;
-        margin: 10px auto; /* Center horizontally */
-    }
-}
-
-/* For Mobile View */
-@media screen and (max-width: 767px) {
-    body {
-        margin: 0 auto;
-        background: #fbfbfb;
-        padding: 15px;
-        text-align: center;
-    }
-
-    .title,
-    footer,
-    footer .heart::before {
-        text-align: left;
-    }
-
-    .container-center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .box,
-    .container,
-    .float-box,
-    .flex-box,
-    .grid-item,
-    .complex,
-    .card,
-    .parent-box {
-        width: 100%;
-        margin: 10px 0;
-        padding: 20px;
-    }
-
-    .grid-item {
-        padding: 20px;
-    }
-}
-
 #box4 {
     background-color: #CDF5FD;
     border-style: dashed;
@@ -234,15 +169,16 @@ body::after {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     background-color: #9D8F8F;
 }
 
 .grid-item {
+    height: 50px;
     background-color: #FFC7C7;
     color: #000000;
-    padding: 100px;
+    padding: 50px;
     font-size: 20px;
     text-align: center;
 }
@@ -321,6 +257,7 @@ body::after {
     line-height: 1.8;
     padding: 10px;
     margin: 20px;
+    margin-left: 45px;
     display: inline-block;
     border: 1px solid;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -335,7 +272,7 @@ body::after {
 }
 
 .card-content {
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -358,12 +295,10 @@ body::after {
     background-color: #FEFCF3;
     padding: 10px;
     margin: 10px;
-    border: 2px dashed #0a0a0a;
 }
 
 .grandchild-box {
     background-color: #e7ddcc;
-    border: 3px dotted #0a0a0a;
     padding: 5px;
     margin: 5px;
 }
@@ -375,31 +310,30 @@ footer {
     text-align: center;
     background: #fbfbfb;
     color: #000000;
-    padding: 30px;
-}
-
-footer > p {
-    font-size: 20px;
 }
 
 footer .heart::before {
     content: '\2665';
+    background-color: #ffffff;
     color: #000000;
     font-size: 2rem;
 }
 
 footer .code {
+    background: #fbfbfb;
     color: #000000;
 }
 
 /* Text Selection Color */
 
 ::-moz-selection { 
-    color: #000000;
     background: #fbfbfb;
+    color: #000000;
+    background: #000000;
 }
 
 ::selection {
-    color: #000000;
     background: #fbfbfb;
+    color: #000000;
+    background: #000000;
 }
